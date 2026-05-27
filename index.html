@@ -3,14 +3,1352 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MedSim Prescritor</title>
-  <meta http-equiv="refresh" content="0; url=./politica-de-privacidade.html" />
-  <link rel="canonical" href="./politica-de-privacidade.html" />
-  <script>
-    window.location.replace("./politica-de-privacidade.html");
-  </script>
+  <meta name="description" content="Política de Privacidade bilíngue do aplicativo MedSim Prescritor." />
+  <meta name="robots" content="index,follow" />
+  <title>Política de Privacidade | MedSim Prescritor</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --ink: #101828;
+      --muted: #667085;
+      --line: #e4e7ec;
+      --brand: #174ea6;
+      --brand-2: #0b2f6b;
+      --brand-3: #eaf2ff;
+      --ok: #0f766e;
+      --shadow: 0 24px 70px rgba(16, 24, 40, .10);
+      --radius: 24px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(23, 78, 166, .16), transparent 32rem),
+        linear-gradient(180deg, #ffffff 0%, var(--bg) 34%, #ffffff 100%);
+      line-height: 1.65;
+    }
+
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(255, 255, 255, .84);
+      border-bottom: 1px solid rgba(228, 231, 236, .78);
+    }
+
+    .nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--brand-2);
+      letter-spacing: -.02em;
+    }
+
+    .mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: linear-gradient(145deg, var(--brand), var(--brand-2));
+      box-shadow: 0 12px 24px rgba(23, 78, 166, .25);
+      font-weight: 900;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .navlinks a {
+      color: var(--ink);
+      font-weight: 650;
+      padding: 8px 12px;
+      border-radius: 999px;
+    }
+
+    .navlinks a:hover {
+      background: var(--brand-3);
+      text-decoration: none;
+      color: var(--brand-2);
+    }
+
+    .hero {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 74px 22px 34px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--brand-3);
+      color: var(--brand-2);
+      font-weight: 800;
+      font-size: .92rem;
+    }
+
+    h1 {
+      font-size: clamp(2.35rem, 5vw, 4.7rem);
+      line-height: .98;
+      margin: 20px 0 18px;
+      letter-spacing: -.065em;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 710px;
+      margin: 0 0 24px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 12px 18px;
+      font-weight: 800;
+      border: 1px solid var(--line);
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+
+    .btn.primary {
+      background: var(--brand);
+      color: white;
+      border-color: var(--brand);
+      box-shadow: 0 12px 28px rgba(23, 78, 166, .28);
+    }
+
+    .btn.secondary {
+      background: white;
+      color: var(--brand-2);
+    }
+
+    .summary-card {
+      background: rgba(255, 255, 255, .88);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .summary-card h2 {
+      margin: 0 0 14px;
+      color: var(--brand-2);
+      font-size: 1.2rem;
+    }
+
+    .summary-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .summary-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--muted);
+    }
+
+    .check {
+      flex: 0 0 auto;
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: var(--ok);
+      font-size: 13px;
+      margin-top: 2px;
+    }
+
+    .meta {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 22px 36px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .meta-item {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px;
+    }
+
+    .meta-item strong {
+      display: block;
+      color: var(--brand-2);
+      margin-bottom: 4px;
+    }
+
+    .meta-item span {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .notice {
+      max-width: var(--max);
+      margin: 20px auto 0;
+      padding: 0 22px;
+    }
+
+    .notice-box {
+      border: 1px solid #bfdbfe;
+      background: #eff6ff;
+      color: #1e3a8a;
+      border-radius: 18px;
+      padding: 16px 18px;
+      font-size: .98rem;
+    }
+
+    .content-wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 36px 22px 80px;
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .toc {
+      position: sticky;
+      top: 88px;
+      max-height: calc(100vh - 112px);
+      overflow: auto;
+      background: rgba(255, 255, 255, .86);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: 0 12px 40px rgba(16, 24, 40, .07);
+    }
+
+    .toc h2 {
+      font-size: .95rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+
+    .toc a {
+      display: block;
+      padding: 8px 10px;
+      border-radius: 12px;
+      color: var(--ink);
+      font-size: .93rem;
+      line-height: 1.35;
+    }
+
+    .toc a:hover {
+      background: var(--brand-3);
+      color: var(--brand-2);
+      text-decoration: none;
+    }
+
+    .policy {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: clamp(24px, 4vw, 48px);
+      overflow: hidden;
+    }
+
+    .policy h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+      color: var(--brand-2);
+      margin-top: 0;
+      letter-spacing: -.04em;
+    }
+
+    .policy h2 {
+      color: var(--brand-2);
+      font-size: clamp(1.35rem, 2.4vw, 2rem);
+      margin: 46px 0 12px;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+      letter-spacing: -.025em;
+    }
+
+    .policy h3 {
+      color: var(--ink);
+      margin: 28px 0 8px;
+      font-size: 1.13rem;
+    }
+
+    .policy p { margin: 0 0 14px; }
+    .policy ul { margin: 0 0 20px 1.1rem; padding-left: 1rem; }
+    .policy li { margin: 7px 0; }
+    .policy strong { color: #0f172a; }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 22px;
+      color: var(--muted);
+      text-align: center;
+      background: white;
+    }
+
+    @media (max-width: 920px) {
+      .hero { grid-template-columns: 1fr; padding-top: 54px; }
+      .meta { grid-template-columns: repeat(2, 1fr); }
+      .content-wrap { grid-template-columns: 1fr; }
+      .toc { position: relative; top: auto; max-height: none; }
+    }
+
+    @media (max-width: 620px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      .navlinks { justify-content: flex-start; }
+      .meta { grid-template-columns: 1fr; }
+      .policy { padding: 22px 18px; }
+      .hero { padding-top: 42px; }
+    }
+  </style>
 </head>
 <body>
-  <p>Redirecionando para a <a href="./politica-de-privacidade.html">Política de Privacidade</a>.</p>
+  <header class="topbar">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="#top" aria-label="Voltar ao início">
+        <span class="mark">M</span>
+        <span>MedSim Prescritor</span>
+      </a>
+      <div class="navlinks">
+        <a href="#politica-de-privacidade-portugues">Português</a>
+        <a href="#privacy-policy-english">English</a>
+        <a href="mailto:medsimprescription@gmail.com">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Apresentação">
+      <div>
+        <span class="eyebrow">Política de Privacidade</span>
+        <h1>Privacidade clara para o MedSim Prescritor.</h1>
+        <p>
+          Página pública bilíngue para informar usuários e plataformas de distribuição sobre coleta,
+          uso, armazenamento, compartilhamento, retenção e exclusão de dados no aplicativo.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#politica-de-privacidade-portugues">Ler em português</a>
+          <a class="btn secondary" href="#privacy-policy-english">Read in English</a>
+        </div>
+      </div>
+
+      <aside class="summary-card" aria-label="Resumo da política">
+        <h2>Resumo operacional</h2>
+        <ul class="summary-list">
+          <li><span class="check">✓</span><span>Aplicativo com finalidade educacional e simulacional.</span></li>
+          <li><span class="check">✓</span><span>Sem anúncios de terceiros na versão atual.</span></li>
+          <li><span class="check">✓</span><span>Sem venda de dados pessoais.</span></li>
+          <li><span class="check">✓</span><span>Dados inseridos tendem a permanecer localmente no dispositivo.</span></li>
+          <li><span class="check">✓</span><span>Usuário não deve inserir dados reais ou identificáveis de pacientes.</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="meta" aria-label="Dados principais">
+      <div class="meta-item"><strong>Aplicativo</strong><span>MedSim Prescritor</span></div>
+      <div class="meta-item"><strong>Responsável</strong><span>Med SIm LTDA</span></div>
+      <div class="meta-item"><strong>Contato</strong><span>medsimprescription@gmail.com</span></div>
+      <div class="meta-item"><strong>Última atualização</strong><span>26 de maio de 2026</span></div>
+    </section>
+
+    <section class="notice" aria-label="Aviso importante">
+      <div class="notice-box">
+        Esta página deve permanecer pública, acessível e sem bloqueio de login. Para publicar na Google Play,
+        use a URL final desta página no campo de Política de Privacidade e também disponibilize o mesmo link dentro do app.
+      </div>
+    </section>
+
+    <section class="content-wrap" aria-label="Texto completo">
+      <aside class="toc" aria-label="Índice">
+        <h2>Índice</h2>
+        <div id="toc"></div>
+      </aside>
+      <article class="policy" id="policy"></article>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 MedSim Prescritor — Política de Privacidade / Privacy Policy.</footer>
+
+  <script type="text/plain" id="policy-md">
+# Política de Privacidade / Privacy Policy
+
+**Aplicativo / Application:** MedSim Prescritor
+**Desenvolvedor / Developer:** Med SIm LTDA
+**E-mail de contato / Contact e-mail:** medsimprescription@gmail.com
+**Última atualização / Last updated:** 26 de maio de 2026 / May 26, 2026
+
+---
+
+# POLÍTICA DE PRIVACIDADE — PORTUGUÊS
+
+## 1. Introdução
+
+Esta Política de Privacidade descreve como o aplicativo **MedSim Prescritor** (“Aplicativo”, “App”, “nós”, “nosso” ou “nossa”) trata informações relacionadas aos usuários.
+
+O **MedSim Prescritor** é um aplicativo voltado à **simulação, estudo, treinamento, organização e apoio educacional relacionado à prescrição médica**. O Aplicativo pode apresentar informações, exemplos, campos de preenchimento, simulações, fluxos de raciocínio, conteúdos técnicos ou ferramentas auxiliares relacionadas à prática médica, farmacológica ou educacional.
+
+O Aplicativo **não substitui avaliação médica individualizada**, **não realiza diagnóstico**, **não prescreve tratamentos de forma autônoma**, **não deve ser utilizado como única fonte para tomada de decisão clínica** e **não deve ser usado para atendimento emergencial**.
+
+Ao utilizar o Aplicativo, o usuário declara que leu, compreendeu e concorda com esta Política de Privacidade.
+
+## 2. Escopo desta Política
+
+Esta Política se aplica ao uso do aplicativo **MedSim Prescritor**, incluindo suas funcionalidades atuais e futuras, páginas internas, recursos educacionais, ferramentas de simulação, telas de cálculo, campos de anotação, preferências locais e eventuais recursos de suporte.
+
+Esta Política não se aplica a sites, serviços, aplicativos, plataformas ou conteúdos de terceiros que possam ser acessados por links externos, lojas de aplicativos, sistemas operacionais, navegadores ou serviços independentes.
+
+## 3. Natureza educacional e limitação médica
+
+O **MedSim Prescritor** tem finalidade **educacional, simulacional e informativa**.
+
+O Aplicativo pode auxiliar estudantes, profissionais ou interessados da área da saúde na organização de informações, simulação de prescrições, consulta de conteúdos e treinamento de raciocínio. No entanto:
+
+* o Aplicativo **não é um dispositivo médico**;
+* o Aplicativo **não realiza diagnóstico médico**;
+* o Aplicativo **não substitui prescrição emitida por profissional legalmente habilitado**;
+* o Aplicativo **não substitui consulta, exame físico, exames complementares ou julgamento clínico**;
+* o Aplicativo **não deve ser usado para emergências médicas**;
+* o Aplicativo **não garante adequação terapêutica individualizada**;
+* o usuário é responsável por verificar informações clínicas, doses, contraindicações, interações, alergias, protocolos e normas locais antes de qualquer aplicação real.
+
+Em caso de dúvida clínica, risco à saúde, evento adverso, urgência ou emergência, o usuário deve procurar atendimento médico, serviço de emergência ou profissional qualificado.
+
+## 4. Controlador dos dados
+
+Para fins desta Política, o responsável pelo Aplicativo é:
+
+**Nome do responsável:** Med SIm LTDA
+**E-mail de contato:** medsimprescription@gmail.com
+**País:** Brasil
+**Aplicativo:** MedSim Prescritor
+
+Solicitações relacionadas à privacidade, dados pessoais, exclusão de dados, dúvidas ou reclamações podem ser enviadas para o e-mail acima.
+
+## 5. Dados que o Aplicativo coleta
+
+Na versão atual, o **MedSim Prescritor** foi projetado para funcionar com o mínimo possível de coleta de dados pessoais.
+
+### 5.1. Dados fornecidos diretamente pelo usuário
+
+O Aplicativo pode permitir que o usuário insira informações manualmente em campos de texto, simulações, formulários, calculadoras ou telas de estudo.
+
+Essas informações podem incluir, dependendo do uso:
+
+* textos digitados pelo usuário;
+* observações de estudo;
+* parâmetros simulados;
+* exemplos de prescrição;
+* dados clínicos fictícios;
+* preferências de uso;
+* configurações internas do aplicativo.
+
+O usuário **não deve inserir dados reais de pacientes**, tais como:
+
+* nome de paciente;
+* CPF, RG, número de prontuário ou documento;
+* endereço;
+* telefone;
+* e-mail;
+* foto;
+* data de nascimento identificável;
+* informações de saúde vinculadas a pessoa real;
+* dados de menores de idade;
+* dados sensíveis identificáveis.
+
+Caso o usuário insira dados reais ou identificáveis no Aplicativo por conta própria, isso será feito sob sua responsabilidade.
+
+### 5.2. Dados pessoais
+
+Na versão atual, o Aplicativo **não tem como objetivo coletar dados pessoais identificáveis** de seus usuários.
+
+Não solicitamos, de forma intencional:
+
+* nome completo;
+* CPF;
+* RG;
+* número de registro profissional;
+* endereço;
+* telefone;
+* e-mail dentro do app;
+* dados bancários;
+* dados de cartão;
+* localização precisa;
+* fotos;
+* contatos;
+* arquivos pessoais;
+* biometria;
+* dados reais de pacientes.
+
+Caso alguma versão futura inclua cadastro, login, sincronização em nuvem, suporte, assinatura, contato direto ou envio de informações ao desenvolvedor, esta Política será atualizada.
+
+### 5.3. Dados sensíveis de saúde
+
+O Aplicativo pode lidar com **conteúdo relacionado à saúde** em caráter educacional ou simulacional, mas não tem como finalidade coletar, armazenar ou compartilhar dados sensíveis reais de pacientes.
+
+O usuário não deve inserir dados reais de saúde de pacientes no Aplicativo.
+
+Exemplos de dados que não devem ser inseridos de forma identificável:
+
+* diagnósticos reais associados a uma pessoa identificável;
+* histórico médico real;
+* alergias reais associadas a pessoa identificável;
+* exames reais;
+* prescrições reais vinculadas a paciente real;
+* imagens médicas;
+* prontuários;
+* informações de gestantes, crianças ou pessoas vulneráveis identificáveis.
+
+### 5.4. Dados técnicos do dispositivo
+
+Dependendo da versão do Aplicativo, do sistema operacional Android, da Google Play Store ou de bibliotecas utilizadas, poderão ser processados dados técnicos mínimos necessários para funcionamento, segurança, atualização ou diagnóstico de falhas, tais como:
+
+* modelo do dispositivo;
+* versão do sistema operacional;
+* idioma do dispositivo;
+* versão do Aplicativo;
+* data e horário de uso;
+* informações de travamento ou erro;
+* identificadores técnicos não diretamente identificáveis;
+* métricas básicas de desempenho.
+
+Esses dados, quando existentes, são usados para melhorar estabilidade, compatibilidade, segurança e correção de falhas.
+
+### 5.5. Dados coletados pela Google Play
+
+Quando o usuário baixa, instala, atualiza, avalia ou interage com o Aplicativo por meio da Google Play Store, a Google pode tratar determinados dados conforme suas próprias políticas, incluindo dados de conta Google, dispositivo, instalação, pagamento, avaliações, estatísticas e segurança.
+
+O tratamento desses dados é realizado pela Google de acordo com as políticas da própria Google, e não diretamente pelo desenvolvedor do Aplicativo.
+
+## 6. Dados que o Aplicativo não coleta intencionalmente
+
+Na versão atual, o **MedSim Prescritor** não coleta intencionalmente:
+
+* localização precisa;
+* contatos;
+* calendário;
+* câmera;
+* microfone;
+* fotos ou vídeos;
+* arquivos pessoais;
+* SMS;
+* chamadas telefônicas;
+* dados biométricos;
+* dados financeiros;
+* dados de pagamento;
+* dados reais de pacientes;
+* dados genéticos;
+* dados de crianças para fins comerciais;
+* informações para publicidade comportamental;
+* identificadores persistentes para rastreamento publicitário.
+
+Caso alguma permissão seja solicitada em versão futura, ela deverá ser limitada à funcionalidade necessária e explicada ao usuário.
+
+## 7. Finalidades do tratamento de dados
+
+Qualquer dado eventualmente tratado pelo Aplicativo será utilizado somente para finalidades compatíveis com seu funcionamento, tais como:
+
+* permitir o uso das funcionalidades do Aplicativo;
+* possibilitar simulações educacionais;
+* armazenar preferências locais do usuário;
+* salvar configurações internas;
+* melhorar experiência de uso;
+* corrigir erros;
+* proteger o Aplicativo contra uso indevido;
+* manter compatibilidade com dispositivos;
+* cumprir obrigações legais ou regulatórias, quando aplicável;
+* responder solicitações de suporte enviadas voluntariamente pelo usuário.
+
+Não usamos dados pessoais para venda, publicidade comportamental, criação de perfis comerciais ou discriminação.
+
+## 8. Base legal para tratamento de dados
+
+Quando aplicável, o tratamento de dados poderá se basear em uma ou mais das seguintes hipóteses:
+
+* consentimento do usuário;
+* execução de funcionalidade solicitada pelo usuário;
+* cumprimento de obrigação legal ou regulatória;
+* legítimo interesse para segurança, prevenção de fraudes, melhoria do serviço e correção de falhas;
+* proteção da vida ou da incolumidade física, em situações excepcionais;
+* exercício regular de direitos.
+
+No Brasil, o tratamento de dados pessoais é regulado pela Lei Geral de Proteção de Dados Pessoais, Lei nº 13.709/2018.
+
+## 9. Armazenamento dos dados
+
+Na versão atual, as informações inseridas no Aplicativo tendem a ser armazenadas **localmente no dispositivo do usuário**, quando necessário para funcionamento.
+
+Isso significa que, salvo indicação expressa em contrário:
+
+* os dados não são enviados automaticamente para servidor próprio do desenvolvedor;
+* os dados não são sincronizados em nuvem pelo Aplicativo;
+* os dados não são compartilhados com terceiros pelo desenvolvedor;
+* a exclusão do Aplicativo pode apagar dados locais;
+* a limpeza dos dados do app nas configurações do Android pode remover informações armazenadas localmente.
+
+O usuário é responsável por proteger o acesso ao próprio dispositivo, utilizando senha, biometria, bloqueio de tela e boas práticas de segurança.
+
+## 10. Compartilhamento de dados
+
+O **MedSim Prescritor** não vende dados pessoais dos usuários.
+
+Na versão atual, o desenvolvedor não compartilha intencionalmente dados pessoais ou dados sensíveis de saúde com terceiros.
+
+Dados técnicos ou informações mínimas poderão ser tratados por terceiros somente quando necessários para:
+
+* distribuição do app pela Google Play;
+* funcionamento do sistema operacional Android;
+* análise de falhas, se integrada em versão futura;
+* hospedagem de política de privacidade;
+* suporte técnico solicitado pelo usuário;
+* cumprimento de obrigação legal;
+* proteção contra fraude, abuso ou uso indevido.
+
+Quando terceiros forem utilizados, cada serviço poderá ter sua própria política de privacidade.
+
+## 11. Serviços de terceiros
+
+O Aplicativo pode depender de serviços de terceiros para distribuição, execução ou compatibilidade, incluindo:
+
+* Google Play Store;
+* Android;
+* serviços de atualização do sistema;
+* ferramentas de análise de estabilidade, caso adicionadas em versão futura;
+* serviços de hospedagem da política de privacidade.
+
+Esses serviços podem tratar dados conforme suas próprias políticas.
+
+O desenvolvedor não controla integralmente as práticas de privacidade de terceiros independentes.
+
+## 12. Anúncios
+
+Na versão atual, o **MedSim Prescritor** não exibe anúncios de terceiros e não utiliza dados pessoais para publicidade comportamental.
+
+Caso anúncios sejam adicionados em versão futura, esta Política será atualizada para informar:
+
+* quais redes de anúncios são utilizadas;
+* quais dados são coletados;
+* se há personalização;
+* como o usuário pode controlar preferências;
+* quais terceiros recebem dados.
+
+## 13. Compras, assinaturas e pagamentos
+
+Na versão atual, o Aplicativo não processa pagamentos diretamente.
+
+Caso o Aplicativo venha a oferecer compras, assinaturas ou recursos pagos pela Google Play, os pagamentos serão processados pela plataforma de pagamento correspondente, como a Google Play Billing, conforme as políticas aplicáveis.
+
+O desenvolvedor não terá acesso direto aos dados completos do cartão de crédito do usuário.
+
+## 14. Login e conta de usuário
+
+Na versão atual, o Aplicativo não exige criação de conta para uso básico.
+
+Caso uma versão futura inclua cadastro, login, autenticação, sincronização ou perfil de usuário, esta Política será atualizada para informar:
+
+* quais dados de cadastro serão coletados;
+* finalidade do cadastro;
+* forma de autenticação;
+* período de retenção;
+* como solicitar exclusão da conta;
+* como excluir dados associados;
+* eventuais terceiros envolvidos.
+
+Se o app permitir criação de conta, o usuário poderá solicitar exclusão da conta e dos dados associados pelos meios indicados nesta Política.
+
+## 15. Permissões do dispositivo
+
+O Aplicativo busca solicitar apenas permissões necessárias para seu funcionamento.
+
+Na versão atual, o Aplicativo não deve solicitar permissões sensíveis desnecessárias, como acesso à localização precisa, contatos, câmera, microfone, SMS, chamadas ou arquivos pessoais.
+
+Caso alguma permissão seja solicitada, sua finalidade deverá estar relacionada ao funcionamento do Aplicativo e será informada ao usuário conforme exigido pelo sistema Android e pelas políticas aplicáveis.
+
+## 16. Segurança dos dados
+
+Adotamos medidas razoáveis para proteger dados eventualmente tratados pelo Aplicativo, incluindo, quando aplicável:
+
+* minimização da coleta de dados;
+* armazenamento local quando possível;
+* limitação de acesso;
+* uso de recursos de segurança do sistema operacional;
+* atualização do Aplicativo para correção de falhas;
+* boas práticas de desenvolvimento;
+* redução de permissões desnecessárias;
+* prevenção de coleta indevida de dados sensíveis.
+
+Apesar dos esforços de segurança, nenhum sistema é absolutamente seguro. O usuário também deve proteger seu dispositivo e evitar inserir dados reais de pacientes ou informações sensíveis no Aplicativo.
+
+## 17. Retenção de dados
+
+Dados armazenados localmente permanecem no dispositivo do usuário enquanto o Aplicativo estiver instalado ou até que o usuário os apague.
+
+O usuário pode apagar dados locais por meio de:
+
+* funcionalidades internas do app, quando disponíveis;
+* configurações do Android;
+* limpeza de dados do aplicativo;
+* desinstalação do aplicativo.
+
+Dados enviados voluntariamente por e-mail para suporte poderão ser mantidos pelo tempo necessário para responder à solicitação, cumprir obrigações legais, prevenir abuso ou preservar direitos.
+
+## 18. Exclusão de dados
+
+O usuário pode solicitar a exclusão de dados pessoais eventualmente mantidos pelo desenvolvedor enviando e-mail para:
+
+**medsimprescription@gmail.com**
+
+A solicitação deve conter informações suficientes para identificação da demanda.
+
+Quando os dados estiverem armazenados apenas no dispositivo do usuário, o desenvolvedor poderá orientar o usuário a excluir os dados localmente, mas não conseguirá apagá-los remotamente.
+
+Podemos manter determinados dados quando necessário para:
+
+* cumprimento de obrigação legal;
+* prevenção de fraude;
+* segurança;
+* exercício regular de direitos;
+* resolução de disputas;
+* cumprimento de determinações legais ou regulatórias.
+
+## 19. Direitos do usuário
+
+Conforme a legislação aplicável, o usuário poderá ter direitos relacionados aos seus dados pessoais, incluindo:
+
+* confirmação da existência de tratamento;
+* acesso aos dados;
+* correção de dados incompletos, inexatos ou desatualizados;
+* anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos;
+* portabilidade, quando aplicável;
+* informação sobre compartilhamento;
+* revogação de consentimento;
+* oposição ao tratamento;
+* solicitação de exclusão;
+* revisão de decisões automatizadas, se houver.
+
+Solicitações podem ser enviadas para **medsimprescription@gmail.com**.
+
+## 20. Crianças e adolescentes
+
+O Aplicativo não é direcionado especificamente a crianças.
+
+O Aplicativo pode conter conteúdo técnico, médico ou educacional mais adequado a estudantes adultos, profissionais da saúde ou usuários com capacidade para compreender informações médicas.
+
+Não coletamos intencionalmente dados pessoais de crianças.
+
+Se o desenvolvedor tomar conhecimento de coleta indevida de dados pessoais de criança, adotará medidas razoáveis para exclusão desses dados.
+
+## 21. Dados de pacientes e responsabilidade profissional
+
+O usuário não deve inserir dados reais de pacientes no Aplicativo.
+
+Profissionais de saúde que utilizarem o Aplicativo são responsáveis por:
+
+* cumprir normas éticas e legais de sua profissão;
+* proteger sigilo profissional;
+* verificar informações antes de qualquer uso clínico;
+* não usar o Aplicativo como prontuário médico;
+* não armazenar informações identificáveis de pacientes no Aplicativo;
+* respeitar legislações de proteção de dados e normas profissionais aplicáveis.
+
+O Aplicativo não se responsabiliza por uso indevido, inserção de dados reais, violação de sigilo, erro de transcrição, erro clínico ou decisão tomada exclusivamente com base no conteúdo do Aplicativo.
+
+## 22. Transferência internacional de dados
+
+Na versão atual, o Aplicativo não transfere intencionalmente dados pessoais do usuário para servidores próprios fora do Brasil.
+
+Entretanto, serviços de terceiros, como Google Play, Android, hospedagem de páginas ou ferramentas de suporte, podem processar dados em outros países conforme suas próprias políticas.
+
+Quando aplicável, serão adotadas medidas razoáveis para respeitar a legislação de proteção de dados.
+
+## 23. Alterações nesta Política
+
+Esta Política de Privacidade poderá ser atualizada periodicamente para refletir:
+
+* alterações no Aplicativo;
+* novas funcionalidades;
+* mudanças legais ou regulatórias;
+* inclusão ou remoção de serviços de terceiros;
+* correções ou esclarecimentos;
+* exigências da Google Play ou de outras plataformas.
+
+A versão atualizada será publicada nesta mesma página ou em local equivalente. A data da última atualização será indicada no início do documento.
+
+O uso contínuo do Aplicativo após alterações indica ciência da nova versão da Política.
+
+## 24. Contato
+
+Para dúvidas, solicitações, reclamações ou pedidos relacionados à privacidade, entre em contato:
+
+**Aplicativo:** MedSim Prescritor
+**Responsável:** Med SIm LTDA
+**E-mail:** medsimprescription@gmail.com
+**País:** Brasil
+
+---
+
+# PRIVACY POLICY — ENGLISH
+
+## 1. Introduction
+
+This Privacy Policy explains how the **MedSim Prescritor** application (“Application”, “App”, “we”, “us” or “our”) handles information related to users.
+
+**MedSim Prescritor** is an application intended for **simulation, study, training, organization and educational support related to medical prescription**. The Application may provide information, examples, input fields, simulations, reasoning workflows, technical content or auxiliary tools related to medical, pharmacological or educational practice.
+
+The Application **does not replace individualized medical evaluation**, **does not provide medical diagnosis**, **does not prescribe treatments autonomously**, **must not be used as the sole source for clinical decision-making**, and **must not be used in medical emergencies**.
+
+By using the Application, the user acknowledges that they have read, understood and agreed to this Privacy Policy.
+
+## 2. Scope of this Policy
+
+This Policy applies to the use of the **MedSim Prescritor** application, including its current and future features, internal pages, educational resources, simulation tools, calculation screens, note fields, local preferences and support resources.
+
+This Policy does not apply to third-party websites, services, applications, platforms or content that may be accessed through external links, app stores, operating systems, browsers or independent services.
+
+## 3. Educational purpose and medical limitation
+
+**MedSim Prescritor** is intended for **educational, simulation and informational purposes**.
+
+The Application may assist students, professionals or people interested in healthcare in organizing information, simulating prescriptions, consulting educational content and training clinical reasoning. However:
+
+* the Application **is not a medical device**;
+* the Application **does not provide medical diagnosis**;
+* the Application **does not replace a prescription issued by a legally qualified professional**;
+* the Application **does not replace consultation, physical examination, complementary tests or clinical judgment**;
+* the Application **must not be used for medical emergencies**;
+* the Application **does not guarantee individualized therapeutic adequacy**;
+* the user is responsible for verifying clinical information, dosages, contraindications, interactions, allergies, protocols and local regulations before any real-world application.
+
+In case of clinical doubt, health risk, adverse event, urgency or emergency, the user must seek medical care, emergency services or a qualified professional.
+
+## 4. Data controller
+
+For the purposes of this Policy, the party responsible for the Application is:
+
+**Responsible party:** Med SIm LTDA
+**Contact e-mail:** medsimprescription@gmail.com
+**Country:** Brazil
+**Application:** MedSim Prescritor
+
+Privacy-related requests, personal data requests, deletion requests, questions or complaints may be sent to the e-mail address above.
+
+## 5. Data collected by the Application
+
+In its current version, **MedSim Prescritor** was designed to operate with the minimum possible collection of personal data.
+
+### 5.1. Data provided directly by the user
+
+The Application may allow the user to manually enter information in text fields, simulations, forms, calculators or study screens.
+
+Such information may include, depending on use:
+
+* text entered by the user;
+* study notes;
+* simulated parameters;
+* prescription examples;
+* fictitious clinical data;
+* usage preferences;
+* internal application settings.
+
+The user **must not enter real patient data**, such as:
+
+* patient name;
+* national identification number or medical record number;
+* address;
+* phone number;
+* e-mail;
+* photo;
+* identifiable date of birth;
+* health information linked to a real person;
+* data relating to minors;
+* identifiable sensitive data.
+
+If the user enters real or identifiable data into the Application on their own initiative, they do so under their own responsibility.
+
+### 5.2. Personal data
+
+In its current version, the Application **does not aim to collect personally identifiable information** from users.
+
+We do not intentionally request:
+
+* full name;
+* national identification number;
+* professional registration number;
+* address;
+* phone number;
+* in-app e-mail address;
+* banking information;
+* card information;
+* precise location;
+* photos;
+* contacts;
+* personal files;
+* biometrics;
+* real patient data.
+
+If a future version includes registration, login, cloud synchronization, support, subscription, direct contact or submission of information to the developer, this Policy will be updated.
+
+### 5.3. Sensitive health data
+
+The Application may deal with **health-related content** for educational or simulation purposes, but it is not intended to collect, store or share real sensitive patient health data.
+
+The user must not enter real patient health data into the Application.
+
+Examples of data that must not be entered in an identifiable manner include:
+
+* real diagnoses associated with an identifiable person;
+* real medical history;
+* real allergies associated with an identifiable person;
+* real test results;
+* real prescriptions linked to a real patient;
+* medical images;
+* medical records;
+* information about pregnant individuals, children or vulnerable persons in an identifiable form.
+
+### 5.4. Technical device data
+
+Depending on the version of the Application, the Android operating system, the Google Play Store or libraries used, minimal technical data may be processed for operation, security, updates or crash diagnostics, such as:
+
+* device model;
+* operating system version;
+* device language;
+* Application version;
+* date and time of use;
+* crash or error information;
+* technical identifiers that do not directly identify the user;
+* basic performance metrics.
+
+When such data exists, it is used to improve stability, compatibility, security and bug fixing.
+
+### 5.5. Data collected by Google Play
+
+When the user downloads, installs, updates, reviews or interacts with the Application through the Google Play Store, Google may process certain data according to its own policies, including Google account data, device data, installation data, payment data, reviews, statistics and security information.
+
+Such processing is carried out by Google under Google’s own policies, and not directly by the Application developer.
+
+## 6. Data the Application does not intentionally collect
+
+In its current version, **MedSim Prescritor** does not intentionally collect:
+
+* precise location;
+* contacts;
+* calendar;
+* camera;
+* microphone;
+* photos or videos;
+* personal files;
+* SMS;
+* phone calls;
+* biometric data;
+* financial data;
+* payment data;
+* real patient data;
+* genetic data;
+* children’s data for commercial purposes;
+* information for behavioral advertising;
+* persistent identifiers for advertising tracking.
+
+If any permission is requested in a future version, it must be limited to the necessary functionality and explained to the user.
+
+## 7. Purposes of data processing
+
+Any data that may be processed by the Application will only be used for purposes compatible with its operation, such as:
+
+* enabling the use of Application features;
+* enabling educational simulations;
+* storing local user preferences;
+* saving internal settings;
+* improving user experience;
+* fixing errors;
+* protecting the Application from misuse;
+* maintaining device compatibility;
+* complying with legal or regulatory obligations, when applicable;
+* responding to support requests voluntarily sent by the user.
+
+We do not use personal data for sale, behavioral advertising, commercial profiling or discrimination.
+
+## 8. Legal basis for data processing
+
+Where applicable, data processing may rely on one or more of the following legal bases:
+
+* user consent;
+* performance of a feature requested by the user;
+* compliance with legal or regulatory obligations;
+* legitimate interest for security, fraud prevention, service improvement and bug fixing;
+* protection of life or physical safety, in exceptional situations;
+* regular exercise of rights.
+
+In Brazil, personal data processing is governed by the Brazilian General Data Protection Law, Law No. 13,709/2018.
+
+## 9. Data storage
+
+In its current version, information entered into the Application tends to be stored **locally on the user’s device**, when necessary for functionality.
+
+This means that, unless expressly stated otherwise:
+
+* data is not automatically sent to a developer-owned server;
+* data is not synchronized to the cloud by the Application;
+* data is not shared with third parties by the developer;
+* uninstalling the Application may delete local data;
+* clearing app data in Android settings may remove locally stored information.
+
+The user is responsible for protecting access to their own device by using a password, biometrics, screen lock and good security practices.
+
+## 10. Data sharing
+
+**MedSim Prescritor** does not sell users’ personal data.
+
+In its current version, the developer does not intentionally share personal data or sensitive health data with third parties.
+
+Technical data or minimal information may be processed by third parties only when necessary for:
+
+* distribution of the app through Google Play;
+* operation of the Android operating system;
+* crash analysis, if integrated in a future version;
+* hosting the privacy policy;
+* technical support requested by the user;
+* compliance with legal obligations;
+* protection against fraud, abuse or misuse.
+
+When third-party services are used, each service may have its own privacy policy.
+
+## 11. Third-party services
+
+The Application may rely on third-party services for distribution, operation or compatibility, including:
+
+* Google Play Store;
+* Android;
+* system update services;
+* stability analysis tools, if added in a future version;
+* privacy policy hosting services.
+
+These services may process data according to their own policies.
+
+The developer does not fully control the privacy practices of independent third parties.
+
+## 12. Advertising
+
+In its current version, **MedSim Prescritor** does not display third-party advertisements and does not use personal data for behavioral advertising.
+
+If advertisements are added in a future version, this Policy will be updated to inform:
+
+* which advertising networks are used;
+* what data is collected;
+* whether personalization occurs;
+* how the user can control preferences;
+* which third parties receive data.
+
+## 13. Purchases, subscriptions and payments
+
+In its current version, the Application does not directly process payments.
+
+If the Application later offers purchases, subscriptions or paid features through Google Play, payments will be processed by the corresponding payment platform, such as Google Play Billing, according to applicable policies.
+
+The developer will not have direct access to the user’s complete credit card details.
+
+## 14. Login and user account
+
+In its current version, the Application does not require account creation for basic use.
+
+If a future version includes registration, login, authentication, synchronization or user profile features, this Policy will be updated to explain:
+
+* what registration data will be collected;
+* the purpose of registration;
+* the authentication method;
+* the retention period;
+* how to request account deletion;
+* how to delete associated data;
+* any third parties involved.
+
+If the app allows account creation, the user may request deletion of the account and associated data through the means described in this Policy.
+
+## 15. Device permissions
+
+The Application seeks to request only the permissions necessary for its operation.
+
+In its current version, the Application should not request unnecessary sensitive permissions such as access to precise location, contacts, camera, microphone, SMS, calls or personal files.
+
+If any permission is requested, its purpose must be related to the operation of the Application and will be disclosed to the user as required by Android and applicable policies.
+
+## 16. Data security
+
+We adopt reasonable measures to protect data that may be processed by the Application, including, where applicable:
+
+* data minimization;
+* local storage where possible;
+* access limitation;
+* use of operating system security features;
+* Application updates to fix vulnerabilities;
+* good development practices;
+* reduction of unnecessary permissions;
+* prevention of improper collection of sensitive data.
+
+Despite security efforts, no system is completely secure. The user must also protect their device and avoid entering real patient data or sensitive information into the Application.
+
+## 17. Data retention
+
+Locally stored data remains on the user’s device while the Application is installed or until the user deletes it.
+
+The user may delete local data through:
+
+* internal app features, when available;
+* Android settings;
+* clearing application data;
+* uninstalling the Application.
+
+Data voluntarily sent by e-mail for support may be retained for as long as necessary to respond to the request, comply with legal obligations, prevent abuse or preserve rights.
+
+## 18. Data deletion
+
+The user may request deletion of personal data that may be held by the developer by sending an e-mail to:
+
+**medsimprescription@gmail.com**
+
+The request must include enough information to identify the request.
+
+When data is stored only on the user’s device, the developer may guide the user on how to delete the data locally but will not be able to delete it remotely.
+
+We may retain certain data when necessary for:
+
+* compliance with legal obligations;
+* fraud prevention;
+* security;
+* regular exercise of rights;
+* dispute resolution;
+* compliance with legal or regulatory orders.
+
+## 19. User rights
+
+Subject to applicable law, the user may have rights related to their personal data, including:
+
+* confirmation of whether processing exists;
+* access to data;
+* correction of incomplete, inaccurate or outdated data;
+* anonymization, blocking or deletion of unnecessary or excessive data;
+* portability, where applicable;
+* information about sharing;
+* withdrawal of consent;
+* objection to processing;
+* deletion request;
+* review of automated decisions, if any.
+
+Requests may be sent to **medsimprescription@gmail.com**.
+
+## 20. Children and minors
+
+The Application is not specifically directed to children.
+
+The Application may contain technical, medical or educational content more appropriate for adult students, healthcare professionals or users capable of understanding medical information.
+
+We do not intentionally collect personal data from children.
+
+If the developer becomes aware of improper collection of children’s personal data, reasonable steps will be taken to delete such data.
+
+## 21. Patient data and professional responsibility
+
+The user must not enter real patient data into the Application.
+
+Healthcare professionals using the Application are responsible for:
+
+* complying with ethical and legal rules of their profession;
+* protecting professional confidentiality;
+* verifying information before any clinical use;
+* not using the Application as a medical record system;
+* not storing identifiable patient information in the Application;
+* complying with applicable data protection laws and professional regulations.
+
+The Application is not responsible for misuse, insertion of real data, breach of confidentiality, transcription errors, clinical errors or decisions made exclusively based on Application content.
+
+## 22. International data transfers
+
+In its current version, the Application does not intentionally transfer users’ personal data to developer-owned servers outside Brazil.
+
+However, third-party services, such as Google Play, Android, page hosting or support tools, may process data in other countries according to their own policies.
+
+Where applicable, reasonable measures will be adopted to respect data protection laws.
+
+## 23. Changes to this Policy
+
+This Privacy Policy may be updated periodically to reflect:
+
+* changes to the Application;
+* new features;
+* legal or regulatory changes;
+* inclusion or removal of third-party services;
+* corrections or clarifications;
+* requirements from Google Play or other platforms.
+
+The updated version will be published on this same page or in an equivalent location. The last updated date will be indicated at the beginning of the document.
+
+Continued use of the Application after changes means acknowledgment of the updated Policy.
+
+## 24. Contact
+
+For questions, requests, complaints or privacy-related matters, please contact:
+
+**Application:** MedSim Prescritor
+**Responsible party:** Med SIm LTDA
+**E-mail:** medsimprescription@gmail.com
+**Country:** Brazil
+  </script>
+
+  <script>
+    const md = document.getElementById('policy-md').textContent.trim();
+    const policyEl = document.getElementById('policy');
+    const tocEl = document.getElementById('toc');
+
+    const escapeHtml = (value) =>
+      value
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+
+    const inlineFormat = (value) => {
+      let escaped = escapeHtml(value);
+      escaped = escaped.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      return escaped;
+    };
+
+    const slugify = (value) =>
+      value
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '');
+
+    function renderMarkdown(source) {
+      const lines = source.split(/\r?\n/);
+      let html = '';
+      let inList = false;
+      const usedIds = new Map();
+
+      const closeList = () => {
+        if (inList) {
+          html += '</ul>';
+          inList = false;
+        }
+      };
+
+      for (const rawLine of lines) {
+        const line = rawLine.trim();
+
+        if (!line) {
+          closeList();
+          continue;
+        }
+
+        if (/^---+$/.test(line)) {
+          closeList();
+          html += '<hr />';
+          continue;
+        }
+
+        const heading = line.match(/^(#{1,3})\s+(.+)$/);
+        if (heading) {
+          closeList();
+          const level = heading[1].length;
+          const text = heading[2].trim();
+          let id = slugify(text);
+          const count = usedIds.get(id) || 0;
+          usedIds.set(id, count + 1);
+          if (count > 0) id = `${id}-${count + 1}`;
+          html += `<h${level} id="${id}">${inlineFormat(text)}</h${level}>`;
+          continue;
+        }
+
+        if (/^\*\s+/.test(line)) {
+          if (!inList) {
+            html += '<ul>';
+            inList = true;
+          }
+          html += `<li>${inlineFormat(line.replace(/^\*\s+/, ''))}</li>`;
+          continue;
+        }
+
+        closeList();
+        html += `<p>${inlineFormat(line)}</p>`;
+      }
+
+      closeList();
+      return html;
+    }
+
+    policyEl.innerHTML = renderMarkdown(md);
+
+    const headings = [...policyEl.querySelectorAll('h1, h2')];
+    tocEl.innerHTML = headings
+      .filter((heading) => heading.id)
+      .map((heading) => `<a href="#${heading.id}">${heading.textContent}</a>`)
+      .join('');
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', (event) => {
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (!target) return;
+        event.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
 </body>
 </html>
